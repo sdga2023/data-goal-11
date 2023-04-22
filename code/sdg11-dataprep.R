@@ -182,4 +182,4 @@ trade.agg.17.22 <- filter(trade.agg, year %in% c(2017, 2022)) %>%
   mutate(to_income = paste(to_income, "_target", sep = ""))
 colnames(trade.agg.17.22) <- c("year", "source", "target", "value")
 
-write.csv(trade.agg.17.22, file="plastic_waste_trade.csv")
+write.csv(trade.agg.17.22, file="../outputs/plastic_waste_trade.csv")
